@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const AI_API = axios.create({
-  baseURL: "https://corporate-khushiyaan-backend.onrender.com/api"
+  baseURL: "https://corporate-khushiyaan-backend.onrender.com/api/ai/chat"
 });
 
 export const sendMessageToAI = (data) =>

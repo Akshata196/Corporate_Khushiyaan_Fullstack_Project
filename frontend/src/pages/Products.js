@@ -6,7 +6,7 @@ import PageNavigation from '../components/PageNavigation';
 function Products() {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
-  const token = localStorage.getItem("token");
+  
 
   useEffect(() => {
     fetchProducts()
@@ -21,11 +21,7 @@ function Products() {
   if (loading) return <h2>Loading...</h2>;
 
   const addToCart = (product) => {
-       if (!token) {
-          alert("Please login first");
-          window.location.href = "/login";
-         return;
-  }
+      
 
   let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
