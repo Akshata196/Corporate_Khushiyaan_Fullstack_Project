@@ -2,13 +2,9 @@ import { useNavigate } from 'react-router-dom';
 
 function PageNavigation() {
   const navigate = useNavigate();
-  const token = localStorage.getItem("token");
+  //const token = localStorage.getItem("token");
 
-const handleLogout = () => {
-  localStorage.removeItem("token");
-  localStorage.removeItem("user");
-  navigate("/login");
-};
+
 
   return (
     <div style={navStyle}>

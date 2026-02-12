@@ -18,7 +18,7 @@ function Products() {
       .catch((err) => console.log(err));
   }, []);
 
-
+  if (loading) return <h2>Loading...</h2>;
 
   const addToCart = (product) => {
        if (!token) {
