@@ -1,11 +1,15 @@
+require('dotenv').config();
+
+const authRoutes = require("./routes/authRoutes");
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
 const productRoutes = require('./routes/productRoutes');
 const enquiryRoutes = require('./routes/enquiryRoutes');
+const aiRoutes = require("./routes/aiRoutes");
 
 
-require('dotenv').config();
+
 
 const app = express();
 
@@ -13,6 +17,10 @@ app.use(cors());
 app.use(express.json());
 app.use('/api/products', productRoutes);
 app.use('/api/enquiry', enquiryRoutes);
+app.use("/api/auth", authRoutes);
+app.use("/api/ai", aiRoutes);
+
+
 
 
 // MongoDB connection
