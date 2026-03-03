@@ -11,7 +11,6 @@ Corporate Khushiyaan is a full-stack AI-powered gifting platform designed to sim
 - [AI Assistant Architecture](#ai-assistant-architecture)
 - [Technology Stack](#technology-stack)
 - [Project Structure](#project-structure)
-- [Demo Video](#demo-video)
 - [Installation & Setup](#installation--setup)
   
 
@@ -140,9 +139,6 @@ Corporate_Khushiyaan_Fullstack_Project/
 └── README.md
 ```
 
-## Demo Video
-
-[![Watch the video](png.png)](./video.mp4)
 
 ## Installation & Setup
 #### 1. Clone Repository
