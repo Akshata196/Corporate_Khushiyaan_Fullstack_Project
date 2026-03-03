@@ -114,21 +114,30 @@ Backend: Render
 Version Control: Git & GitHub
 
 ## Project Structure
-corporate-khushiyaan/
-│
-├── frontend/
-│   ├── components/
-│   ├── pages/
-│   ├── services/
-│   └── App.js
+
+```bash
+Corporate_Khushiyaan_Fullstack_Project/
 │
 ├── backend/
+│   ├── middleware/
 │   ├── models/
-│   ├── controllers/
+│   ├── node_modules/
 │   ├── routes/
+│   ├── package-lock.json
+│   ├── package.json
 │   └── server.js
 │
+├── frontend/
+│   ├── build/
+│   ├── public/
+│   ├── src/
+│   ├── README.md
+│   ├── package-lock.json
+│   └── package.json
+│
+├── .gitignore
 └── README.md
+```
 
 ## Installation & Setup
 #### 1. Clone Repository
